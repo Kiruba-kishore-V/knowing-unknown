@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;       /* to box model */
+}
+
+/* GLOBAL */
+
+body{
+  font-family: "Rubik", sans-serif;
+  background-color: #ebf2ff;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+
+.button__primary{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container{                   /*makesurecontainerhavesomespaceonleftandrightsothatitcanappearthecontentatcentrelocation*/
+  width: 100%;
+  height: auto;
+  margin:0 auto;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafc;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+  height: 5rem;
+  
+}
+
+.navbar__brand{
+  width: 100px;
+}
+
+.navbar__logo{
+  width:100%;
+}
+
+.hero__container{
+  width:100%;
+  margin-top: 3rem;
+}
+
+.hero__image__container{
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero__image__shape{
+  position: absolute;
+  right: 2;
+}
+
+.hero__image{
+  width:100%;
+  height: 85%;
+  position: absolute;
+  right: auto;
+  left: auto;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero__text{
+  font-size: 27px;
+  color: #1d3557;
+  margin: 20px 0;
+ 
+}
+
+/* MENU STYLES */
+
+.explore_menu_container{
+  margin-top: 6rem;
+  width: 100%;
+
+}
+
+.explore_menu_text{
+  font-size: 25px;
+  font-size: 27px;
+  color: #1d3557;
+  margin: 20px 0;
+  margin: 9px;
+  text-align: center;
+}
+
+.food_menu_card{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 1.5rem;
+}
+
+.food_image{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.food_menu_card_description{
+  padding: 18px;;
+
+}
+.explore_menu_view_more{
+  display:flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* FLEX */
+
+.restaurants__container{
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.restaurants__description{
+  font-size: 27px;
+  color: #1d3557;
+  margin: 21px 0;
+  text-align: center;
+
+}
+.restaurants__flex__row__one , .restaurants__flex__row__two{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+
+}
+
+.restaurants__flex__row__one{
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant__1,
+.restaurant__4{
+  width: 180%;
+  height: 200px;
+}
+
+.restaurant__2,
+.restaurant__3{
+  width: 230%;
+  height: 250px;
+}
+
+.head_text{
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 550;
+}
+
+.email_subs_container{
+  margin-top: 3rem;
+  width: 100%;
+  padding:15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.email_subs_input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email_input{
+  border: 1px solid #ee89a0;
+  background-color: #fcedf0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+  border-radius: 2rem 2rem 0 0;
+}
+
+.footer_image_logo{
+  width: 280px;
+  filter: brightness(0) invert(1);
+}  
+
+.listof{
+  margin-top: -2rem;
+  color: #fff;
+}
+
+.unordered_list{
+  margin: 10px 0;
+  justify-content:space-between;
+}
+
+
+
+
+@media (min-width: 768px){
+
+.navbar{
+   justify-content: space-between;
+   padding: 10px 22px;
+   height: 2rem 0 0;
+  }
+
+  .navbar__brand{
+    width: 155px;
+  }
+
+  .button__primary{
+    padding: 10px 17px;
+    font-size: 14px;
+  }
+
+
+  .hero__container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap:10px;
+  }
+
+  .hero__image{
+    width:100%;
+    margin-top: 2rem;
+  }
+  
+.explore_menu_container{
+  position: relative;
+}
+
+.explore_menu_gradient__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+
+    z-index: -3;
+    transform: skewY(-5deg);
+
+}
+
+  .explore_menu_lists{
+    display: flex;
+    gap: 11px;
+    margin-top: 35px;
+  }
+
+  #pizza__card{
+    margin-top: -20px;
+    margin-bottom: 35px;
+  }
+
+  .restaurants__description{
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .restaurants__container{
+    display: flex;
+    align-items: center;
+  }
+
+  .restaurant__flex{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1020px){
+  .container{
+    max-width: 1010px;
+  }
+
+  .hero__image{
+    margin-top: 22px;
+  }
+
+  .hero__text{
+    font-size: 44px;
+  }
+
+  .explore_menu_lists{
+    gap: 22px;
+    padding: 0 22px;
+}
+.explore_menu_text{
+  font-size: 45px;
+
+}
+
+
+
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1250px;
+
+  }
+  .hero__image__container{
+    width:100%;
+  }
+}
+}

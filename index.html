@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="style.css" />
+     <title>Prep_urself</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img src="./assets/logo.png" alt="logo" class="navbar__logo" />
+        </div>
+        <div class="navbar__nav__items">
+          <button class="nav__item button__primary">Order Food</button>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+    <!--HERO SECTION-->
+    <section class="hero__container">
+      <div class="hero__image__container">
+        <img class="hero__image" src="./assets/hero.jpg" alt="hero_image" />
+        <img class="hero__image__shape" src="./assets/svg/heroShape.svg" alt="hero_image_shape" />
+        <img class="hero__image__pattern" src="./assets/svg/herobgpattren.svg" alt="hero_image_pattern" />
+      </div>
+      <div class="hero__description">
+        <h1 class="hero__text">Order food from your favourite restaurants near you and enjoy</h1>
+        <button class="button__primary">Order Now</button>
+        </div>
+    </section>
+
+    <!--- Explore menu --->
+
+    <section class="explore_menu_container">
+      <h1 class="explore_menu_text">À la carte</h1>
+      <div class="explore_menu_gradient__bg"></div>
+      <div class="explore_menu_lists"> <!--List which comprises all food cards-->
+        <!--BURGER-->
+        <div class="food_menu_card">
+          <img src="/assets/burger.jpg" alt="burger" class="food_image" />
+          <div class="food_menu_card_description">
+            <h3 class="food_title">Burgers</h3>
+            <p class="food_restaurants">Burger King, Mcdonalds, Burger Place,<span style="color: red;"> +3</span>
+            </p>
+          </div>
+        </div>
+        <!--PIZZA-->
+        <div class="food_menu_card" id="pizza__card">
+          <img src="/assets/pizza.jpg" alt="pizza" class="food_image" />
+          <div class="food_menu_card_description">
+            <h3 class="food_title">Pizza</h3>
+            <p class="food_restaurants">Pizza Hut, Domino's Pizza, Calin pizza<span style="color: red;"> +3</span>
+            </p>
+          </div>
+        </div>
+        <!--ICECREAMS-->
+        <div class="food_menu_card">
+          <img src="/assets/iceCream.jpg" alt="icecreams" class="food_image" />
+          <div class="food_menu_card_description">
+            <h3 class="food_title">Ice cream</h3>
+            <p class="food_restaurants">Baskin Robins, Ibaco, Michael's icecreams<span style="color: red;"> +3</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="explore_menu_view_more">
+        <button class="button__primary">More to indulge in</button>
+      </div>
+    </section>
+
+    <!--RESTAURANTS-->
+
+    <section class="restaurants__container">
+      <h1 class="restaurants__description">Order From 100s of restaurants</h1>
+      
+      <div class="restaurant__flex">
+
+        <div class="restaurants__flex__row__one">
+
+          <div class="restaurant__1">
+            <img class="restaurant__1__image" src="/assets/restaurant1.jpg" alt="restaurant__1" />
+          </div>
+          <div class="restaurant__2">
+            <img class="restaurant__2__image" src="/assets/restaurant2.jpg" alt="restaurant__2" />
+          </div>
+
+        </div>
+        <div class="restaurants__flex__row__two">
+
+          <div class="restaurant__3">
+            <img class="restaurant__3__image" src="/assets/restaurant3.jpg" alt="restaurant__3" />
+          </div>
+          <div class="restaurant__4">
+            <img class="restaurant__4__image" src="/assets/restaurant4.jpg" alt="restaurant__4" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!--emailsubs-->
+
+    <section class="email_subs_container">
+      <div>
+        <h1 class="head_text">Join Us</h1>
+        <div class="email_subs_input">
+          <div>
+            <input type="email" placeholder="Enter email Id" class="email_input">
+          </div>
+          <button class="button__primary">Get updates</button>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+      <img src="./assets/logo.png" alt="logo" class="footer_image_logo">
+      <ul class="listof">
+        <div class="unordered_list">
+        <li>Pricing</li>
+        <li>Terms and conditions</li>
+        <li>Partnership</li>
+        <li>Careers</li>
+        <li>Contact</li>
+      </div>
+      </ul>
+    </footer>
+  </body>
+</html>
